@@ -4,6 +4,12 @@
 
 > 基于`React Hooks` + `typescript`的基础组件
 
+## 特性
+
+-   [x] 错误图像显示
+-   [x] 响应图片, 根据媒体查询显示不同的图片
+-   [x] Placeholder 图片占位符
+
 ## 安装
 
 ```sh
@@ -20,7 +26,23 @@ yarn add xy-image
 import React from "react";
 import ReactDOM from "react-dom";
 import XyImage from "xy-image";
-ReactDOM.render(<XyImage />, container);
+ReactDOM.render(<XyImage src="xx.png" />, container);
+```
+
+**MediaQueryConfig**
+
+```ts
+export interface MediaQueryConfig {
+    /**
+     * 媒体查询
+     * (min-width: 1500px) 字符串 或 1500 数值
+     */
+    querie: string | number;
+    /**
+     * 对应查询显示图片路径
+     */
+    src: string;
+}
 ```
 
 ## 开发
