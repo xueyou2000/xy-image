@@ -1,7 +1,7 @@
 {
     "name": "xy-image",
-    "version": "0.0.1",
-    "description": "基于React的基础组件",
+    "version": "1.0.0",
+    "description": "基于React的图片组件",
     "types": "es/index.d.ts",
     "main": "es/index.js",
     "module": "es/index.js",
