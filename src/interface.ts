@@ -1,17 +1,5 @@
 export interface ImageProps {
     /**
-     * 媒体查询配置
-     */
-    querieConfigs?: MediaQueryConfig[];
-    /**
-     * 图像占位符
-     */
-    placeholder?: React.ReactNode;
-    /**
-     * 错误图像
-     */
-    errorIamge?: React.ReactNode;
-    /**
      * 附加类名
      */
     prefixCls?: string;
@@ -23,6 +11,25 @@ export interface ImageProps {
      * 内联样式
      */
     style?: React.CSSProperties;
+    /**
+     * 媒体查询配置
+     */
+    querieConfigs?: MediaQueryConfig[];
+    /**
+     * 阻止加载图片
+     * @description 可通过此属性自行封装实现延迟加载图片
+     */
+    stop?: boolean;
+    /**
+     * 加载内容
+     * @description 图片加载中时显示的内容
+     */
+    loadNode?: React.ReactNode;
+    /**
+     * 错误内容
+     * @description 图片加载失败时显示的内容
+     */
+    failNode?: React.ReactNode;
     /**
      * 图像路径
      */

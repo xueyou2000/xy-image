@@ -2,7 +2,7 @@
 
 ---
 
-> 基于`React Hooks` + `typescript`的基础组件
+> 基于`React Hooks` + `typescript`的基础组件, 只提供`es`模块
 
 ## 特性
 
@@ -14,10 +14,10 @@
 
 ```sh
 # npm
-npm install --save xy-image
+npm install --save xy-image classNames utils-hooks
 
 # yarn
-yarn add xy-image
+yarn add xy-image classNames utils-hooks
 ```
 
 ## 使用
@@ -25,8 +25,10 @@ yarn add xy-image
 ```ts
 import React from "react";
 import ReactDOM from "react-dom";
-import XyImage from "xy-image";
-ReactDOM.render(<XyImage src="xx.png" />, container);
+import Image from "xy-image";
+// 加载可选样式
+import "xy-image/assets/index.css";
+ReactDOM.render(<Image src="xx.png" />, container);
 ```
 
 **MediaQueryConfig**
@@ -63,4 +65,4 @@ yarn run test
 
 ## 开源许可
 
-rc-xy-image is released under the MIT license.
+xy-image is released under the MIT license.

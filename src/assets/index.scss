@@ -1,0 +1,9 @@
+$imageWarpPrefixCls: "xy-image";
+
+.#{$imageWarpPrefixCls} {
+    display: inline-block;
+
+    .#{$imageWarpPrefixCls}-img {
+        display: block;
+    }
+}
