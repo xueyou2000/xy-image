@@ -12,7 +12,7 @@
 
 ## 安装
 
-[![xy-checkbox](https://nodei.co/npm/xy-checkbox.png)](https://npmjs.org/package/xy-checkbox)
+[![xy-image](https://nodei.co/npm/xy-image.png)](https://npmjs.org/package/xy-image)
 
 |![IE](https://github.com/alrra/browser-logos/blob/master/src/edge/edge_48x48.png?raw=true) | ![Chrome](https://github.com/alrra/browser-logos/blob/master/src/chrome/chrome_48x48.png?raw=true) | ![Firefox](https://github.com/alrra/browser-logos/blob/master/src/firefox/firefox_48x48.png?raw=true) | ![Opera](https://github.com/alrra/browser-logos/blob/master/src/opera/opera_48x48.png?raw=true) | ![Safari](https://github.com/alrra/browser-logos/blob/master/src/safari/safari_48x48.png?raw=true)|
 | --- | --- | --- | --- | --- |
