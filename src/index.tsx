@@ -37,7 +37,7 @@ export function Image(props: ImageProps) {
     const { prefixCls = "xy-image", className, style, stop, querieConfigs = [], loadNode = null, failNode = null, onError, onLoad, ...rest } = props;
     const [status, setStatus] = useState(ImageStateEnum.Loading);
     const src = useMedisSrc(querieConfigs, props.src);
-    const imgStyle = { display: status === ImageStateEnum.Complete ? "initial" : "none" };
+    const imgStyle = { display: status === ImageStateEnum.Complete ? "inline-block" : "none" };
 
     function renderContent() {
         switch (status) {
