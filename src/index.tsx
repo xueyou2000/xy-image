@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React, { useEffect, useState } from "react";
-import useMedia from "utils-hooks/es/useMedia";
+import { useMedia } from "utils-hooks";
 import { ImageProps, MediaQueryConfig } from "./interface";
 
 /**

@@ -1,6 +1,6 @@
 {
     "name": "xy-image",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "基于React的图片组件",
     "types": "es/index.d.ts",
     "main": "es/index.js",
@@ -52,7 +52,7 @@
         "classnames": "^2.2.6",
         "react": "^16.8.2",
         "react-dom": "^16.8.2",
-        "utils-hooks": "^0.0.31"
+        "utils-hooks": "0.0.39"
     },
     "repository": {
         "type": "git",
@@ -60,7 +60,7 @@
     },
     "jest": {
         "transformIgnorePatterns": [
-            "<rootDir>/node_modules/(?!(utils-hooks/es/useMedia))"
+            "<rootDir>/node_modules/(?!(utils-hooks))"
         ]
     }
 }
