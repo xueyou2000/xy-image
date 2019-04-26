@@ -25,16 +25,16 @@
 
 [![xy-image](https://nodei.co/npm/xy-image.png)](https://npmjs.org/package/xy-image)
 
-|![IE](https://github.com/alrra/browser-logos/blob/master/src/edge/edge_48x48.png?raw=true) | ![Chrome](https://github.com/alrra/browser-logos/blob/master/src/chrome/chrome_48x48.png?raw=true) | ![Firefox](https://github.com/alrra/browser-logos/blob/master/src/firefox/firefox_48x48.png?raw=true) | ![Opera](https://github.com/alrra/browser-logos/blob/master/src/opera/opera_48x48.png?raw=true) | ![Safari](https://github.com/alrra/browser-logos/blob/master/src/safari/safari_48x48.png?raw=true)|
-| --- | --- | --- | --- | --- |
-| IE 10+ ✔ | Chrome 31.0+ ✔ | Firefox 31.0+ ✔ | Opera 30.0+ ✔ | Safari 7.0+ ✔ |
+| ![IE](https://github.com/alrra/browser-logos/blob/master/src/edge/edge_48x48.png?raw=true) | ![Chrome](https://github.com/alrra/browser-logos/blob/master/src/chrome/chrome_48x48.png?raw=true) | ![Firefox](https://github.com/alrra/browser-logos/blob/master/src/firefox/firefox_48x48.png?raw=true) | ![Opera](https://github.com/alrra/browser-logos/blob/master/src/opera/opera_48x48.png?raw=true) | ![Safari](https://github.com/alrra/browser-logos/blob/master/src/safari/safari_48x48.png?raw=true) |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| IE 10+ ✔                                                                                   | Chrome 31.0+ ✔                                                                                     | Firefox 31.0+ ✔                                                                                       | Opera 30.0+ ✔                                                                                   | Safari 7.0+ ✔                                                                                      |
 
 ```sh
 # npm
-npm install --save xy-image classNames utils-hooks
+npm install --save xy-image utils-hooks classNames
 
 # yarn
-yarn add xy-image classNames utils-hooks
+yarn add xy-image utils-hooks classNames
 ```
 
 ## 使用
@@ -43,7 +43,7 @@ yarn add xy-image classNames utils-hooks
 import React from "react";
 import ReactDOM from "react-dom";
 import Image from "xy-image";
-// 加载可选样式
+// 加载样式
 import "xy-image/assets/index.css";
 ReactDOM.render(<Image src="xx.png" />, container);
 ```
