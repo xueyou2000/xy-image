@@ -13,6 +13,7 @@
         "lib": ["dom", "esnext"],
         "noFallthroughCasesInSwitch": true,
         "moduleResolution": "node",
+        "resolveJsonModule": true,
         "paths": {
             "@/*": ["src/*"]
         },
@@ -22,6 +23,5 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true
     },
-    "include": ["src"],
-    "exclude": ["node_modules", ".awcache"]
+    "include": ["src"]
 }

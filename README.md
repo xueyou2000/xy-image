@@ -1,19 +1,16 @@
+| ![IE](https://github.com/alrra/browser-logos/blob/master/src/edge/edge_48x48.png?raw=true) | ![Chrome](https://github.com/alrra/browser-logos/blob/master/src/chrome/chrome_48x48.png?raw=true) | ![Firefox](https://github.com/alrra/browser-logos/blob/master/src/firefox/firefox_48x48.png?raw=true) | ![Opera](https://github.com/alrra/browser-logos/blob/master/src/opera/opera_48x48.png?raw=true) | ![Safari](https://github.com/alrra/browser-logos/blob/master/src/safari/safari_48x48.png?raw=true) |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| IE 10+ ✔                                                                                   | Chrome 31.0+ ✔                                                                                     | Firefox 31.0+ ✔                                                                                       | Opera 30.0+ ✔                                                                                   | Safari 7.0+ ✔                                                                                      |
+
+![NPM version](http://img.shields.io/npm/v/xy-image.svg?style=flat-square)
+![node version](https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square)
+![npm download](https://img.shields.io/npm/dm/xy-image.svg?style=flat-square)
+
+[![xy-image](https://nodei.co/npm/xy-image.png)](https://npmjs.org/package/xy-image)
+
 # xy-image
 
----
-
-[![NPM version][npm-image]][npm-url]
-[![node version][node-image]][node-url]
-[![npm download][download-image]][download-url]
-
-[npm-image]: http://img.shields.io/npm/v/xy-image.svg?style=flat-square
-[npm-url]: http://npmjs.org/package/xy-image
-[node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
-[node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/xy-image.svg?style=flat-square
-[download-url]: https://npmjs.org/package/xy-image
-
-> 基于`React Hooks` + `typescript`的基础组件, 只提供`es`模块
+图片组件
 
 ## 特性
 
@@ -23,23 +20,14 @@
 
 ## 安装
 
-[![xy-image](https://nodei.co/npm/xy-image.png)](https://npmjs.org/package/xy-image)
-
-| ![IE](https://github.com/alrra/browser-logos/blob/master/src/edge/edge_48x48.png?raw=true) | ![Chrome](https://github.com/alrra/browser-logos/blob/master/src/chrome/chrome_48x48.png?raw=true) | ![Firefox](https://github.com/alrra/browser-logos/blob/master/src/firefox/firefox_48x48.png?raw=true) | ![Opera](https://github.com/alrra/browser-logos/blob/master/src/opera/opera_48x48.png?raw=true) | ![Safari](https://github.com/alrra/browser-logos/blob/master/src/safari/safari_48x48.png?raw=true) |
-| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| IE 10+ ✔                                                                                   | Chrome 31.0+ ✔                                                                                     | Firefox 31.0+ ✔                                                                                       | Opera 30.0+ ✔                                                                                   | Safari 7.0+ ✔                                                                                      |
-
-```sh
-# npm
-npm install --save xy-image utils-hooks classNames
-
+```bash
 # yarn
 yarn add xy-image utils-hooks classNames
 ```
 
-## 使用
+## 使用例子
 
-```ts
+```tsx
 import React from "react";
 import ReactDOM from "react-dom";
 import Image from "xy-image";
@@ -47,6 +35,23 @@ import Image from "xy-image";
 import "xy-image/assets/index.css";
 ReactDOM.render(<Image src="xx.png" />, container);
 ```
+
+## API
+
+| 属性          | 说明                                               | 类型                                                        | 默认值 |
+| ------------- | -------------------------------------------------- | ----------------------------------------------------------- | ------ |
+| querieConfigs | 媒体查询配置                                       | MediaQueryConfig[]                                          | 无     |
+| stop          | 阻止加载图片, 可通过此属性自行封装实现延迟加载图片 | boolean                                                     | false  |
+| loadNode      | 加载内容, 图片加载中时显示的内容                   | React.ReactNode                                             | 无     |
+| failNode      | 错误内容, 图片加载失败时显示的内容                 | React.ReactNode                                             | 无     |
+| src           | 图像路径                                           | string                                                      | 无     |
+| alt           | 图片描述                                           | string                                                      | 无     |
+| crossOrigin   | 跨域源                                             | "anonymous"/"use-credentials"                               | 无     |
+| width         | 图片宽度                                           | number/string                                               | 无     |
+| height        | 图片高度                                           | number/string                                               | 无     |
+| onClick       | 点击事件                                           | (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => void | 无     |
+| onLoad        | 图片加载完毕                                       | () => void                                                  | 无     |
+| onError       | 图片加载失败                                       | () => void                                                  | 无     |
 
 **MediaQueryConfig**
 
