@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Image from "../src";
-import "../src/assets/index";
 import squares from "./squares.svg";
 import { ImageProps } from "../src/interface";
 import { useObserver } from "utils-hooks";

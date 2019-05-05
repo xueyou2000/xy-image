@@ -1,22 +1,21 @@
 import React from "react";
 import Image from "../src";
-import "../src/assets/index";
 import squares from "./squares.svg";
 
 export default function MediaQuery() {
     const q = [
         {
             querie: "(min-width: 1500px)",
-            src: "https://source.unsplash.com/lxuB4abGzXc/800x1000",
+            src: "https://source.unsplash.com/lxuB4abGzXc/800x1000"
         },
         {
             querie: "(min-width: 1000px)",
-            src: "https://source.unsplash.com/d30sszrW7Vw/800x800",
+            src: "https://source.unsplash.com/d30sszrW7Vw/800x800"
         },
         {
             querie: "(min-width: 600px)",
-            src: "https://source.unsplash.com/mDuluxr50Ew/800x500",
-        },
+            src: "https://source.unsplash.com/mDuluxr50Ew/800x500"
+        }
     ];
 
     return (
