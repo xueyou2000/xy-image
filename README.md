@@ -22,7 +22,7 @@
 
 ```bash
 # yarn
-yarn add xy-image utils-hooks classNames
+yarn add xy-image
 ```
 
 ## 使用例子
